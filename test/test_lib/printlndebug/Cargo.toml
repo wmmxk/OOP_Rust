@@ -1,0 +1,6 @@
+[package]
+name = "printlndebug"
+version = "0.1.0"
+authors = ["wmmxk <wmmkx@hotmail.com>"]
+
+[dependencies]
