@@ -6,6 +6,7 @@ enum Direction {
      North,
      East,
      South=10,
+//  South = 1, you will see an error. enum already has '1isize'
      West,
 }
 
