@@ -30,12 +30,12 @@ fn main() {
     let s1 = String::from("hello");
     println!("s1 is {}", s1);
 	match s1 {
-         localv => println!("local v is {} ",localv),
+
+// after the ownership is given to the localv, you can not use s1 anymore immediately.
+         localv => println!("local v is {} ",s1),
 //correct          ref localv => println!("local v is {} ",localv),
 	}
 
-    let s2 = s1;
 
-    println!("s2 is {}", s2);
   
 }
