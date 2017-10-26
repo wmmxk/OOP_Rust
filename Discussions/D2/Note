@@ -9,3 +9,6 @@ p116: null pointer. If the python code is translated to rust, what will happen
 what is the reason for the error, referencing the first element of a vector and then push
 
 p126: if you bring in more than one reference, you need to specify which lifetime you are returning. 
+
+Assign an element of a vector to another element of a vector:
+http://xion.io/post/code/rust-move-out-of-container.html
