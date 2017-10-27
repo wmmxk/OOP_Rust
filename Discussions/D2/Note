@@ -2,7 +2,11 @@ Mater rust book
 
 P122: If there is a mutable reference to a thing, no multiple references.
 
+   If there is a borrow, you can move the data
+   http://arthurtw.github.io/2014/11/30/rust-borrow-lifetimes.html
+
 P92: type dismatch
+     If a function does return something explicitly, it return a (). If the return type you defined is not (). A type mismatch error will show
 
 p116: null pointer. If the python code is translated to rust, what will happen
 
@@ -12,3 +16,13 @@ p126: if you bring in more than one reference, you need to specify which lifetim
 
 Assign an element of a vector to another element of a vector:
 http://xion.io/post/code/rust-move-out-of-container.html
+
+
+Difference between ref and & in match arm; In constructing you use & myvar but not ref myvar.
+In match arm, you use ref local, because the local does not exist
+
+seq (1..4)
+
+_, ..
+
+String vs str and literal string

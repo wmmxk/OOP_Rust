@@ -1,4 +1,6 @@
 //this is to show if you loop through element in the vector directly, the vector will be consumed by for loop;
+// To demonstrate the point, you can use a vector of String
+// you can not use the vectors, because push move the data or the for loop move the data
 #[derive(Debug)]
 pub enum Operator {
   Add,
