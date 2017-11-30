@@ -1,0 +1,14 @@
+1. how to structure the project?
+   two structures:
+       tree: one filed of Option<Box<Node<T>>> type
+       node: three fields, data: T, left: Tree<T>, right: Tree<T>
+             Or left: Option<Box<Node<T>>>
+
+2. If the left and right fields are both of tree type, you can recursively call the function, find, insert, preorder and others on the left node or right node, because these functions take a reference to tree as an arugument.
+
+3. If the left and right node are Option<Box<Node<T>>>, you need to define another function which takes a node as an arugment and do the recursion.
+
+
+4. A student missed the Some(ref mut node) in the insert function and saw some error saying capture dynamic environment
+
+5. Where to declare the vector in preorder and postorder and inorder functions.
