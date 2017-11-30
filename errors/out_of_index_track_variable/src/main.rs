@@ -1,9 +1,6 @@
 //source: https://doc.rust-lang.org/book/second-edition/ch09-01-unrecoverable-errors-with-panic.html
-
-
 // how to backtrace the error:
 // RUST_BACKTRACE=1 cargo run  . it wil trace to the line in the main function
-
 pub struct Matrix<T> {
     data: Vec<T>,
     row: usize,

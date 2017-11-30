@@ -1,6 +1,6 @@
 #[derive(Debug)]
 struct Node {
-next: Option<i32>,
+next: Option<Box<Node>>,
 data: i32,
 }
 

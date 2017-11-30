@@ -9,7 +9,8 @@ data: i32,
 impl<'a> Node<'a> {
 	fn new_link(key:i32) -> Option<&'a Node<'a>> {
 
-//The newly created node is a local variable, we can not return it
+  //The newly created node is a local variable, we can not return it
+  //If it is Box, which is owning pointer and the data is created on the heap, it is OK.
      Some(& Node{next:None,data:key })
 	}
   
